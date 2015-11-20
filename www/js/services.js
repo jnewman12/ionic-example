@@ -1,1 +1,1 @@
-angular.module('songhop.services', []);
+angular.module('songhop.services', ['ionic']);

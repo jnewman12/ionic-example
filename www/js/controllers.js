@@ -1,9 +1,5 @@
 angular.module('songhop.controllers', ['ionic', 'songhop.services'])
 
-
-/*
-Controller for the discover page
-*/
 .controller('DiscoverCtrl', function($scope) {
 	$scope.songs = [
 	   {
@@ -25,20 +21,12 @@ Controller for the discover page
 	      "image_large":"https://i.scdn.co/image/4e47ee3f6214fabbbed2092a21e62ee2a830058a"
 	   }
 	];
+	$scope.currentSong = angular.copy($scope.songs[0]);
 })
 
-
-/*
-Controller for the favorites page
-*/
 .controller('FavoritesCtrl', function($scope) {
 
 })
 
-
-/*
-Controller for our tab bar
-*/
 .controller('TabsCtrl', function($scope) {
-
-});
+})
